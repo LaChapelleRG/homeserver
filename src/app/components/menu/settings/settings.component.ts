@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import exec = require('child_process').exec;
 
 @Component({
   selector: 'app-settings',
@@ -14,7 +13,7 @@ export class SettingsComponent implements OnInit {
   }
 
   shutdown() {
-    
+
     console.log('Pi Shutdown');
   }
 
