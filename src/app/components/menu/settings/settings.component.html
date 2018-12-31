@@ -1,0 +1,13 @@
+<button mat-button [matMenuTriggerFor]="rootMenu">
+    <mat-icon>settings</mat-icon>
+</button>
+<mat-menu #rootMenu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">
+        <mat-icon>power_settings_new</mat-icon>
+    </button>
+</mat-menu>
+<mat-menu #subMenu="matMenu">
+    <button mat-menu-item (click)="shutdown()">Shut down</button>
+    <button mat-menu-item>Restart</button>
+    <button mat-menu-item>Hibernate</button>
+</mat-menu>
